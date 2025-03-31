@@ -2,25 +2,13 @@
 
 This repository is the implementation code for our paper entitled _"Embracing Unimodal Aleatoric Uncertainty for Robust Multimodal Fusion"_ (CVPR 2024) and its extension version (under review). 
 
-
 ![model framework](figures/framework.png)
 
-
 # Model Training
-Please download the BERT pre-trained weights and put corresponding files into the path _prebert/_.
-Moreover, the MVSA-Single dataset is organized as follows: 
+Please download the BERT pre-trained weights and put corresponding files into the path _prebert/_, and put the CMU-MOSI dataset features pickle files into the path _dataset/_.
 
 
-```
-data
-|-- MVSA_Single
-|   |-- train.jsonl
-|   |-- dev.jsonl
-|   |-- test.jsonl
-|   |-- labelResultAll.txt
-```
-
-Run the following scripts to train `URMF` on the MVSA-Single dataset.
+Run the following scripts to train `URMF` on the CMU-MOSI dataset.
 
 ```
 python train.py
